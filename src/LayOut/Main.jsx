@@ -12,7 +12,7 @@ const Main = () => {
             <Navbar dark={dark} setDark={setDark}></Navbar>
             </div>
             <div className=" container mx-auto">
-            <Outlet></Outlet>
+            <Outlet dark={dark} setDark={setDark}></Outlet>
             </div>
             <Footer></Footer>
         </div>

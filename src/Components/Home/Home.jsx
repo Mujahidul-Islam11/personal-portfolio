@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+import Banner from "../Banner/Banner";
 
 
-const Home = () => {
+const Home = ({dark, setDark}) => {
+    console.log(dark)
     return (
         <div>
-            <h3>Hello world</h3>
+            <Banner dark={dark} setDark={setDark}></Banner>
         </div>
     );
 };
