@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 const Banner = ({ dark, setDark }) => {
-  console.log(dark);
   return (
     <div>
       <section className="flex min-h-[600px]  w-full items-center justify-center px-8">
@@ -20,9 +21,9 @@ const Banner = ({ dark, setDark }) => {
               dynamic team.
             </p>
             <div className="flex space-x-4">
-              <div class="flex md:w-[360px] justify-between">
+              <div class="mx-auto md:flex justify-start w-full gap-6">
                 <a href="https://github.com/Mujahidul-Islam11" target="_blank">
-                  <div class="duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
+                  <div className="duration-300 mb-2 md:mb-0 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -44,7 +45,7 @@ const Banner = ({ dark, setDark }) => {
                   href="https://www.linkedin.com/in/mohammad-mojahidul-islam-71675629b/"
                   target="_blank"
                 >
-                  <div className="duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
+                  <div className="duration-300 mb-2 md:mb-0 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -63,8 +64,8 @@ const Banner = ({ dark, setDark }) => {
                     </p>
                   </div>
                 </a>
-                <a href="mailto:web.dev.dinar@gmail.com">
-                  <div className="duration-300 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
+                <a className="" href="mailto:web.dev.dinar@gmail.com">
+                  <div className="duration-300 mb-2 md:mb-0 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -85,7 +86,6 @@ const Banner = ({ dark, setDark }) => {
                 </a>
               </div>
             </div>
-            <p className="text-sm text-gray-500">Trusted by 5000+ Users</p>
           </div>
           <div className="relative">
             <img
