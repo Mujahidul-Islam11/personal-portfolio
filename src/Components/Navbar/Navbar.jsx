@@ -1,35 +1,40 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { NavLink } from "react-router-dom";
+import { RiMenu2Line } from "react-icons/ri";
+import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
 
 const Navbar = ({dark, setDark}) => {
+  const [open, setOpen] = useState(false)
     
   const links = (
     <>
       <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Home</button>
-      </NavLink>
+      </NavLink> <br />
       <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Projects</button>
-      </NavLink>
+      </NavLink> <br />
       <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">About Me</button>
-      </NavLink>
+      </NavLink> <br />
       <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Skills</button>
-      </NavLink>
+      </NavLink> <br />
       <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Contact</button>
-      </NavLink>
+      </NavLink> <br />
     </>
   );
   
   return (
-    <div className={`flex items-center justify-between container mx-auto py-2`}>
+    <div className="">
+      <div className={`flex items-center justify-between container mx-auto py-2`}>
       <div>
         <img className="w-[55px]" src="../../../public/Logo-2.png" alt="" />
       </div>
-      <div className="flex items-center gap-6">
+      <div className="hidden md:flex items-center gap-6">
         {links}
         <div>
           {dark ? <button onClick={() => setDark(false)}>
@@ -63,6 +68,23 @@ const Navbar = ({dark, setDark}) => {
           </button>}
         </div>
       </div>
+      <div className="block md:hidden">
+          {
+            open? 
+            <IoMdClose onClick={()=> setOpen(false)} className="text-xl font-semibold cursor-pointer"></IoMdClose>
+            :
+            <RiMenu2Line onClick={()=> setOpen(true)} className="text-xl font-semibold cursor-pointer"></RiMenu2Line>
+
+          }
+        </div>
+    </div>
+    {
+      open ? <div className="md:hidden flex justify-end items-end"> 
+      <div className="w-[150px] rounded-lg shadow-xl py-4 px-4">
+        {links}
+      </div>
+          </div> : ''
+    }
     </div>
   );
 };

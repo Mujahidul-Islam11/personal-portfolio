@@ -7,9 +7,13 @@ import { useState } from "react";
 const Main = () => {
     const [dark, setDark] = useState(false)
     return (
-        <div className={`${dark ?"bg-[#060024] text-white": ""}`}>
+        <div className={`${dark ?"bg-[#060024] text-white": ""} px-4 md:px-0`}>
+            <div className="">
             <Navbar dark={dark} setDark={setDark}></Navbar>
+            </div>
+            <div className=" container mx-auto">
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
