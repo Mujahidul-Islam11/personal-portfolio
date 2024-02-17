@@ -6,28 +6,28 @@ const Navbar = ({dark, setDark}) => {
     
   const links = (
     <>
-      <NavLink className={"font-semibold"}>
+      <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Home</button>
       </NavLink>
-      <NavLink className={"font-semibold"}>
+      <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Projects</button>
       </NavLink>
-      <NavLink className={"font-semibold"}>
+      <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">About Me</button>
       </NavLink>
-      <NavLink className={"font-semibold"}>
+      <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Skills</button>
       </NavLink>
-      <NavLink className={"font-semibold"}>
+      <NavLink className={"hover:text-sky-300 font-semibold"}>
         <button className="uppercase">Contact</button>
       </NavLink>
     </>
   );
   
   return (
-    <div className={`flex items-center justify-between container mx-auto`}>
+    <div className={`flex items-center justify-between container mx-auto py-2`}>
       <div>
-        <img className="w-20" src="../../../public/Logo-1.png" alt="" />
+        <img className="w-[55px]" src="../../../public/Logo-2.png" alt="" />
       </div>
       <div className="flex items-center gap-6">
         {links}
