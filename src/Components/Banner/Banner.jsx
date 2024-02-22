@@ -4,8 +4,14 @@
 const Banner = ({ dark, setDark }) => {
   return (
     <div>
-      <section className="flex min-h-[600px]  w-full items-center justify-center px-8">
-        <div className="flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
+      <section className="flex min-h-[600px]  w-full items-center justify-center px-4">
+        <div className="md:flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
+        <div className="relative md:hidden">
+            <img
+              src="https://i.postimg.cc/y8NhvyR1/LMC-20231231-160520-Sunny-selfie-by-Riyan-1-1-removebg-preview.png"
+              className="relative object-cover shadow-xl rounded-full mb-4"
+            />
+          </div>
           <div className="max-w-md md:space-y-6 sm:space-y-5 space-y-4">
             <h1
               className={`lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight ${
@@ -87,7 +93,7 @@ const Banner = ({ dark, setDark }) => {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative hidden md:flex">
             <img
               src="https://i.postimg.cc/y8NhvyR1/LMC-20231231-160520-Sunny-selfie-by-Riyan-1-1-removebg-preview.png"
               className="relative object-cover shadow-xl rounded-b-full"
