@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
+import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
 
 
 const Home = ({dark, setDark}) => {
-    console.log(dark)
     return (
         <div>
             <Banner dark={dark} setDark={setDark}></Banner>
+            <AboutMe></AboutMe>
         </div>
     );
 };

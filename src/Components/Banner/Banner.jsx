@@ -1,12 +1,17 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+
+import DarkMode from "../../DarkMode";
+
 /* eslint-disable react/no-unknown-property */
-const Banner = ({ dark, setDark }) => {
+const Banner = () => {
+  const [dark, setDark] = DarkMode();
+
   return (
     <div>
       <section className="flex min-h-[600px]  w-full items-center justify-center px-4">
         <div className="md:flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
-        <div className="relative md:hidden">
+          <div className="relative md:hidden">
             <img
               src="https://i.postimg.cc/y8NhvyR1/LMC-20231231-160520-Sunny-selfie-by-Riyan-1-1-removebg-preview.png"
               className="relative object-cover shadow-xl rounded-full mb-4"

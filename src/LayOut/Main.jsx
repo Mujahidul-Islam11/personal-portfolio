@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-import { useState } from "react";
+import DarkMode from "../DarkMode";
 
 
 const Main = () => {
-    const [dark, setDark] = useState(false)
+    const [dark, setDark] = DarkMode()
     return (
         <div className={`${dark ?"bg-[#060024] text-white": ""} px-4 md:px-0`}>
             <div className="">
