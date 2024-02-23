@@ -51,9 +51,9 @@ const Navbar = ({ dark, setDark }) => {
             Resume
           </button>
           </a>
-          <div>
+          <div id="darkM">
             {dark ? (
-              <button onClick={() => setDark(false)}>
+              <button  onClick={() => setDark(false)}>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -69,7 +69,7 @@ const Navbar = ({ dark, setDark }) => {
                 </svg>
               </button>
             ) : (
-              <button onClick={() => setDark(true)}>
+              <button  onClick={() => setDark(true)}>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"

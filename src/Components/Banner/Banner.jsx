@@ -6,7 +6,6 @@ import DarkMode from "../../DarkMode";
 /* eslint-disable react/no-unknown-property */
 const Banner = () => {
   const [dark, setDark] = DarkMode();
-
   return (
     <div>
       <section className="flex min-h-[600px]  w-full items-center justify-center px-4">
@@ -19,9 +18,7 @@ const Banner = () => {
           </div>
           <div className="max-w-md md:space-y-6 sm:space-y-5 space-y-4">
             <h1
-              className={`lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight ${
-                dark ? "text-white" : "text-gray-900"
-              }`}
+              className={`lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight dark:text-white text-gray-900`}
             >
               Mohammad Mojahidul Islam
             </h1>
