@@ -6,7 +6,7 @@ import DarkMode from "../../DarkMode";
 
 /* eslint-disable react/no-unknown-property */
 const Banner = () => {
-  const {text} = useTypewriter({
+  const [text] = useTypewriter({
     words: ['Front-End Developer', 'ReactJs Developer'],
     loop: {},
 
@@ -28,10 +28,10 @@ const Banner = () => {
             >
               Mohammad Mojahidul Islam
             </h1>
-            <h1>
+            <h1 className="text-2xl">
               I am a 
-              <span>{text}</span>
-              <span> <Cursor></Cursor></span>
+              <span className="text-sky-400 font-semibold"> {text}</span>
+              <span className="text-sky-400 font-semibold"> <Cursor></Cursor></span>
             </h1>
             <p className="lg:text-lg sm:text-base text-sm text-gray-600">
               Passionate Front-End Developer from Bangladesh specializing in
