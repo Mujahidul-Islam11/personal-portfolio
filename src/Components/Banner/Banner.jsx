@@ -1,10 +1,16 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import DarkMode from "../../DarkMode";
 
 /* eslint-disable react/no-unknown-property */
 const Banner = () => {
+  const {text} = useTypewriter({
+    words: ['Front-End Developer', 'ReactJs Developer'],
+    loop: {},
+
+  })
   const [dark, setDark] = DarkMode();
   return (
     <div>
@@ -21,6 +27,11 @@ const Banner = () => {
               className={`lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight dark:text-white text-gray-900`}
             >
               Mohammad Mojahidul Islam
+            </h1>
+            <h1>
+              I am a 
+              <span>{text}</span>
+              <span> <Cursor></Cursor></span>
             </h1>
             <p className="lg:text-lg sm:text-base text-sm text-gray-600">
               Passionate Front-End Developer from Bangladesh specializing in
