@@ -51,7 +51,7 @@ const Navbar = ({ dark, setDark }) => {
             Resume
           </button>
           </a>
-          <div id="darkM">
+          <div className="">
             {dark ? (
               <button  onClick={() => setDark(false)}>
                 <svg
@@ -100,8 +100,9 @@ const Navbar = ({ dark, setDark }) => {
           )}
         </div>
       </div>
+      <div className="relative z-50">
       {open ? (
-        <div className="md:hidden flex justify-end items-end">
+        <div className="md:hidden absolute bg-white right-0 flex justify-end items-end">
           <div className="w-[150px] rounded-lg shadow-xl py-4 px-4">
             {links}
           </div>
@@ -109,6 +110,7 @@ const Navbar = ({ dark, setDark }) => {
       ) : (
         ""
       )}
+      </div>
     </div>
   );
 };
