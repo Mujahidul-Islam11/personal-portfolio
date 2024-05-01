@@ -14,7 +14,7 @@ const Banner = () => {
   const [dark, setDark] = DarkMode();
   return (
     <div>
-      <section className="flex relative min-h-[600px] w-full items-center justify-center px-4">
+      <section className="flex max-w-screen-xl relative min-h-[600px] w-full items-center justify-center px-4">
         <div className="md:flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
           <div className="relative md:hidden">
             <img
@@ -39,6 +39,8 @@ const Banner = () => {
               impactful web development. Ready to contribute and shine in a
               dynamic team.
             </p>
+
+            {/* Contact information's */}
             <div className="flex space-x-4">
               <div class="mx-auto md:flex justify-start w-full gap-6">
                 <a href="https://github.com/Mujahidul-Islam11" target="_blank">
@@ -61,7 +63,7 @@ const Banner = () => {
                   </div>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/mohammad-mojahidul-islam-71675629b/"
+                  href="https://www.linkedin.com/in/mohammad-mojahidul-islam/"
                   target="_blank"
                 >
                   <div className="duration-300 mb-2 md:mb-0 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
@@ -109,7 +111,7 @@ const Banner = () => {
           <div className="relative hidden md:flex">
             <img
               src="https://i.postimg.cc/y8NhvyR1/LMC-20231231-160520-Sunny-selfie-by-Riyan-1-1-removebg-preview.png"
-              className="relative object-cover shadow-xl rounded-b-full"
+              className={`relative object-cover shadow-xl rounded-b-full`}
             />
           </div>
         </div>

@@ -39,7 +39,9 @@ const Navbar = ({ dark, setDark }) => {
         className={`flex items-center justify-between container mx-auto py-2`}
       >
         <div>
-          <img className="w-[55px]" src="../../../public/Logo-2.png" alt="" />
+          <NavLink to={'/'}>
+          <img className="w-[55px] cursor-pointer" src="../../../public/Logo-2.png" alt="" />
+          </NavLink>
         </div>
         <div className="hidden md:flex items-center gap-6">
           {links}
