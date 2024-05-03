@@ -41,6 +41,7 @@ const Banner = () => {
             </p>
 
             {/* Contact information's */}
+            
             <div className="flex space-x-4">
               <div class="mx-auto md:flex justify-start w-full gap-6">
                 <a href="https://github.com/Mujahidul-Islam11" target="_blank">
