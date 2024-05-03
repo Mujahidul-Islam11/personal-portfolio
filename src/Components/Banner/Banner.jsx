@@ -7,7 +7,7 @@ import DarkMode from "../../DarkMode";
 /* eslint-disable react/no-unknown-property */
 const Banner = () => {
   const [text] = useTypewriter({
-    words: ['Front-End Developer', 'ReactJs Developer'],
+    words: ['Front-End Developer', 'React-Js Developer'],
     loop: {},
 
   })
