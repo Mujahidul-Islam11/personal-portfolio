@@ -40,7 +40,7 @@ const Navbar = ({ dark, setDark }) => {
       >
         <div>
           <NavLink to={'/'}>
-          <img className="w-[55px] cursor-pointer" src="../../../public/Logo-2.png" alt="" />
+          <img className="w-[55px] cursor-pointer" src="https://i.ibb.co/r74JVK9/Logo-2.png" alt="" />
           </NavLink>
         </div>
         <div className="hidden md:flex items-center gap-6">
