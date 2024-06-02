@@ -15,15 +15,15 @@ const Navbar = ({ dark, setDark }) => {
       </NavLink>{" "}
       <br />
       <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
-        <button className="uppercase">Projects</button>
-      </NavLink>{" "}
-      <br />
-      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
         <button className="uppercase">About Me</button>
       </NavLink>{" "}
       <br />
       <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
         <button className="uppercase">Skills</button>
+      </NavLink>{" "}
+      <br />
+      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
+        <button className="uppercase">Projects</button>
       </NavLink>{" "}
       <br />
       <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
@@ -45,7 +45,7 @@ const Navbar = ({ dark, setDark }) => {
         </div>
         <div className="hidden md:flex items-center gap-6">
           {links}
-          <a href="https://drive.google.com/uc?export=download&id=1QZVAv68YzYdFtb-cNg_fe_A2yH3VNJUs" download={"Mojahidul Islam's Resume"}>
+          <a href="https://drive.google.com/uc?export=download&id=1YhQCCEx1ym9FEk0woVHXHWmUNZGhNcZF" download={"Mojahidul Islam's Resume"}>
           <button
             id="button-rs"
             className="items-center text-center font-semibold"
