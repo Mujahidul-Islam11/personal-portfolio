@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="">
           <img
             className="md:w-[400px] mb-6 md:h-[400px] object-cover rounded-full"
-            src="../../../public/about_me.jpg"
+            src="https://i.ibb.co/0r48SF0/about-me.jpg"
             alt=""
           />
         </div>
