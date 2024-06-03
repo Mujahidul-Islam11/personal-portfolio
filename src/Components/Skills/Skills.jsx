@@ -19,7 +19,7 @@ const Skills = () => {
         {logos?.map((logo) => (
           <div key={logo?.name}>
             <div
-              className={`border w-52 h-52 flex justify-center items-center flex-col overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-md shadow-[${logo?.color}]`}
+              className={`border w-52 h-52 flex justify-center items-center flex-col overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-md hover:shadow-[#38BDF8]`}
             >
               <img className="w-20 h-20" src={logo?.image} alt="" />
               <h3 className="text-2xl font-semibold">{logo?.name}</h3>

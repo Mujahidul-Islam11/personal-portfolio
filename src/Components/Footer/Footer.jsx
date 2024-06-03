@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import DarkMode from "../../DarkMode";
 
 
@@ -7,12 +8,12 @@ const Footer = () => {
 
     return (
         <div className="md:flex justify-center mx-auto py-4 px-2 md:px-6 gap-14 border-t">
-            <p className="text-gray-600">Copyright © 2024 - All right reserved by Mohammad Mojahidul Islam</p>
+            <p className={`text-gray-600 dark:text-white ${dark ? 'text-white': ''}`}>Copyright © 2024 - All right reserved by Mohammad Mojahidul Islam</p>
             <div className="flex gap-3">
                 <a href="https://github.com/Mujahidul-Islam11"><svg
                       stroke="currentColor"
                       fill="currentColor"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 1024 1024"
                       className={dark ? 'text-white': 'text-black'}
                       height="25"
@@ -25,7 +26,7 @@ const Footer = () => {
                 <svg
                       stroke="currentColor"
                       fill="currentColor"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 24 24"
                       className={dark ? 'text-white': 'text-black'}
                       height="25"
@@ -39,7 +40,7 @@ const Footer = () => {
                 <svg
                       stroke="currentColor"
                       fill="currentColor"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 24 24"
                       className={dark ? 'text-white': 'text-black'}
                       height="25"
