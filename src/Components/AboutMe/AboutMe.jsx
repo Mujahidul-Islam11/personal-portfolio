@@ -7,9 +7,9 @@ const AboutMe = () => {
         <p className="text-center text-gray-600">My introduction</p>
       </div>
       <div className="px-4 md:flex justify-center items-center gap-16">
-        <div className="">
+        <div className="flex justify-center md:w-1/2">
           <img
-            className="md:w-[400px] mb-6 md:h-[400px] object-cover rounded-full"
+            className="mb-6 w-[200px] md:w-[400px] h-[200px] md:h-[400px] object-cover rounded-full"
             src="https://i.ibb.co/0r48SF0/about-me.jpg"
             alt=""
           />
@@ -24,6 +24,7 @@ const AboutMe = () => {
             innovation and attention to detail sets me apart. Let's transform
             ideas into stunning digital experiences together! 🚀
           </h3>
+          <div className="flex justify-center md:justify-start">
           <a className="" href="mailto:web.dev.dinar@gmail.com">
             <div className="duration-300 mb-2 md:mb-0 w-[150px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
               <svg
@@ -44,6 +45,7 @@ const AboutMe = () => {
               </p>
             </div>
           </a>
+          </div>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ const Banner = () => {
             {/* Contact information's */}
             
             <div className="flex space-x-4">
-              <div class="mx-auto flex justify-start flex-wrap w-full gap-6">
+              <div class="md:justify-start flex  flex-wrap mx-auto w-full justify-center md:m-0 gap-3 md:gap-6">
                 <a href="https://github.com/Mujahidul-Islam11" target="_blank">
                   <div className="duration-300 mb-2 md:mb-0 w-[110px] px-2 rounded-[2px] py-2 flex items-center justify-center gap-x-2 bg-sky-400 hover:bg-sky-600">
                     <svg
