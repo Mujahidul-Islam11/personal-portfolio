@@ -1,6 +1,10 @@
+import DarkMode from "../../DarkMode";
 
 
 const Footer = () => {
+    
+  const [dark, setDark] = DarkMode();
+
     return (
         <div className="md:flex justify-center mx-auto py-4 px-2 md:px-6 gap-14 border-t">
             <p className="text-gray-600">Copyright © 2024 - All right reserved by Mohammad Mojahidul Islam</p>
@@ -10,7 +14,7 @@ const Footer = () => {
                       fill="currentColor"
                       stroke-width="0"
                       viewBox="0 0 1024 1024"
-                      class="text-black dark:white"
+                      className={dark ? 'text-white': 'text-black'}
                       height="25"
                       width="25"
                       xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +27,7 @@ const Footer = () => {
                       fill="currentColor"
                       stroke-width="0"
                       viewBox="0 0 24 24"
-                      class="text-black dark:text-white"
+                      className={dark ? 'text-white': 'text-black'}
                       height="25"
                       width="25"
                       xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +41,7 @@ const Footer = () => {
                       fill="currentColor"
                       stroke-width="0"
                       viewBox="0 0 24 24"
-                      className="text-black dark:text-white"
+                      className={dark ? 'text-white': 'text-black'}
                       height="25"
                       width="25"
                       xmlns="http://www.w3.org/2000/svg"
