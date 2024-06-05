@@ -10,23 +10,23 @@ const Navbar = ({ dark, setDark }) => {
 
   const links = (
     <>
-      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
+      <NavLink className={"hover:text-sky-300 transition-colors duration-300 font-semibold"}>
         <button className="uppercase">Home</button>
       </NavLink>{" "}
       <br />
-      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
+      <NavLink className={"hover:text-sky-300 transition-colors duration-300 font-semibold"}>
         <button className="uppercase">About Me</button>
       </NavLink>{" "}
       <br />
-      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
+      <NavLink className={"hover:text-sky-300 transition-colors duration-300 font-semibold"}>
         <button className="uppercase">Skills</button>
       </NavLink>{" "}
       <br />
-      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
+      <NavLink className={"hover:text-sky-300 transition-colors duration-300 font-semibold"}>
         <button className="uppercase">Projects</button>
       </NavLink>{" "}
       <br />
-      <NavLink className={"hover:text-sky-300 transition-colors duration-100 font-semibold"}>
+      <NavLink className={"hover:text-sky-300 transition-colors duration-300 font-semibold"}>
         <button className="uppercase">Contact</button>
       </NavLink>{" "}
       <br />
