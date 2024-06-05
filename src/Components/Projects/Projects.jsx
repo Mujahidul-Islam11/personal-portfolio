@@ -22,7 +22,7 @@ const Projects = () => {
       <div className="flex flex-wrap justify-center mx-auto gap-6">
         {/* Cards */}
         {
-          projects?.map(project => <div key={project?.project_name} className="border rounded-lg">
+          projects?.map(project => <div key={project?.project_name} className="border rounded-lg hover:scale-105 transition-transform duration-300 hover:shadow-md hover:shadow-[#38BDF8]">
           <img
             className="object-cover md:w-[800px] rounded-t-lg"
             src={project?.cover}
