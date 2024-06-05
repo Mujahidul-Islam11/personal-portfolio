@@ -19,7 +19,7 @@ const Projects = () => {
         <p className="text-center text-gray-600">Take a look at my projects</p>
       </div>
       {/* Cards container */}
-      <div className="flex flex-wrap justify-center mx-auto gap-6">
+      <div className="flex flex-wrap justify-center mx-auto gap-12">
         {/* Cards */}
         {
           projects?.map(project => <div key={project?.project_name} className="border rounded-lg hover:scale-105 transition-transform duration-300 hover:shadow-md hover:shadow-[#38BDF8]">
