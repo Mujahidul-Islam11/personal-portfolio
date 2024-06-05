@@ -1,0 +1,23 @@
+[
+    {
+        "cover": "https://i.ibb.co/WBq9RNg/Untitled-design.png",
+        "project_name": "BidPlus.",
+        "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS"],
+        "codelink": "https://github.com/Mujahidul-Islam11/bidplus-client",
+        "livelink": "https://bidplus.netlify.app/"
+    },
+    {
+        "cover": "https://i.ibb.co/x5SVqwp/Untitled-design-1.png",
+        "project_name": "VoteSnap",
+        "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS"],
+        "codelink": "https://github.com/Mujahidul-Islam11/votesnap-client",
+        "livelink": "https://car-doctor-bc7cb.firebaseapp.com/"
+    },
+    {
+        "cover": "https://i.ibb.co/K7zzn5g/Untitled-design-3.png",
+        "project_name": "EntoMedu",
+        "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS"],
+        "codelink": "https://github.com/Mujahidul-Islam11/brand-shop-client",
+        "livelink": "https://cosmic-pie-c055cc.netlify.app/"
+    }
+]
