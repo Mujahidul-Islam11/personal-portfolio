@@ -11,6 +11,44 @@ const Contact = () => {
           have.
         </p>
       </div>
+      <div className="mx-4 md:w-1/2 mx-auto my-12">
+        <div className="flex flex-col md:flex-row gap-10 mb-10">
+          <div>
+            <label className="font-semibold uppercase text-base">
+              Your Name
+            </label>
+            <br />
+            <input
+              className=" peer border-b w-full text-xl border-black py-2 focus:outline-none "
+              placeholder="Type your name here!"
+              type="text"
+            />
+            <div className=""></div>
+          </div>
+          <div>
+            <label className="font-semibold  uppercase">
+              Your Email
+            </label>
+            <br />
+            <input
+              className=" peer border-b w-full text-xl border-black py-2 focus:outline-none "
+              placeholder="Enter your email address"
+              type="text"
+            />
+          </div>
+        </div>
+        <div>
+          <label className="font-semibold uppercase">
+            Your Message
+          </label>
+          <br />
+          <textarea
+            className=" peer border-b text-xl w-full border-black py-6 focus:outline-none "
+            placeholder="Type your message"
+            type="text"
+          />
+        </div>
+      </div>
     </div>
   );
 };
