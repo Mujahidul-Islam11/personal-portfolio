@@ -10,10 +10,10 @@ const Skills = () => {
   return (
     <div className="my-7 md:my-12">
       <div className="mb-8">
-        <h3 className="text-3xl md:text-4xl font-bold text-center">
+        <h3 className="text-3xl md:text-5xl font-bold text-center">
           My Skills
         </h3>
-        <p className="text-center text-gray-600">Check out my skills</p>
+        <p className="md:text-lg text-center text-gray-600">Check out my skills</p>
       </div>
       <div className="mx-4 flex justify-center md:mx-60 flex-wrap gap-8">
         {logos?.map((logo) => (
