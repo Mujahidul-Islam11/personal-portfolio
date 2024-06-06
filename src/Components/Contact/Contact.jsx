@@ -12,14 +12,14 @@ const Contact = () => {
         </p>
       </div>
       <form className="mx-4 md:w-1/2 mx-auto my-12">
-        <div className="flex flex-col md:flex-row gap-10 mb-10">
+        <div className="flex flex-col md:flex-row justify-between mb-10">
           <div>
             <label className="font-semibold uppercase text-base">
               Your Name
             </label>
             <br />
             <input
-              className=" peer border-b w-full text-xl border-black py-2 focus:outline-none "
+              className=" peer border-b w-full text-xl border-gray-800 py-2 focus:outline-none "
               placeholder="Type your name here!"
               type="text"
             />
