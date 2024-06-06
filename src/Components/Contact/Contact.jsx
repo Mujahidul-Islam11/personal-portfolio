@@ -11,7 +11,7 @@ const Contact = () => {
           have.
         </p>
       </div>
-      <div className="mx-4 md:w-1/2 mx-auto my-12">
+      <form className="mx-4 md:w-1/2 mx-auto my-12">
         <div className="flex flex-col md:flex-row gap-10 mb-10">
           <div>
             <label className="font-semibold uppercase text-base">
@@ -48,7 +48,7 @@ const Contact = () => {
             type="text"
           />
         </div>
-      </div>
+      </form>
     </div>
   );
 };
