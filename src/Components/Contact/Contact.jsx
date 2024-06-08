@@ -49,6 +49,8 @@ const Contact = () => {
             type="text"
           />
         </div>
+        <input type="submit" value="Send"
+        className="bg-[#38BDF8] text-xl text-white rounded-sm cursor-pointer py-2 px-6 flex justify-center mx-auto mt-6 hover:bg-[#35afe2]" />
       </form>
     </div>
   );
