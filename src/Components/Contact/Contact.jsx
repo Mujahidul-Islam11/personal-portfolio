@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
   return (
-    <div className="my-7 md:my-20">
+    <div id="Contact" className="my-7 md:my-20">
       <div className="mb-8">
         <h3 className="text-3xl md:text-5xl font-bold text-center">
           Contact with Me

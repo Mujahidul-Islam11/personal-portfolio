@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 const AboutMe = () => {
   return (
-    <div className="my-7 md:my-20">
+    <div id="About" className="my-7 md:my-20">
       <div className="mb-8">
         <h3 className="text-3xl md:text-5xl font-bold text-center">About Me</h3>
         <p className="md:text-lg text-center text-gray-600">My introduction</p>

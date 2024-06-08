@@ -8,7 +8,7 @@ import Skills from "../Skills/Skills";
 
 const Home = ({dark, setDark}) => {
     return (
-        <div>
+        <div id="Home">
             <Banner dark={dark} setDark={setDark}></Banner>
             <AboutMe></AboutMe>
             <Skills></Skills>

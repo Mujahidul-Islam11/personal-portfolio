@@ -8,7 +8,7 @@ const Skills = () => {
       .then((data) => setLogos(data));
   }, []);
   return (
-    <div className="my-7 md:my-20">
+    <div id="Skills" className="my-7 md:my-20">
       <div className="mb-8">
         <h3 className="text-3xl md:text-5xl font-bold text-center">
           My Skills

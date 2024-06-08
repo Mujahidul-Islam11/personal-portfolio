@@ -13,7 +13,7 @@ const Banner = () => {
   })
   const [dark, setDark] = DarkMode();
   return (
-    <div>
+    <div className="py-6">
       <section className="flex max-w-screen-xl relative min-h-[600px] w-full items-center justify-center px-4">
         <div className="md:flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
           <div className="relative md:hidden">
