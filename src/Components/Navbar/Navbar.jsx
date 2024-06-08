@@ -45,7 +45,7 @@ const Navbar = ({ dark, setDark }) => {
   );
 
   return (
-    <div className="fixed w-full bg-white z-10">
+    <div className="md:fixed md:w-full bg-white z-10">
       <div
         className={`flex items-center justify-between container mx-auto py-2`}
       >
