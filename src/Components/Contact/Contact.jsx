@@ -12,38 +12,39 @@ const Contact = () => {
         </p>
       </div>
       <form className="mx-4 md:w-1/2 mx-auto my-12">
-        <div className="flex flex-col md:flex-row justify-between mb-10">
-          <div>
-            <label className="font-semibold uppercase text-base">
+        {/* User details input */}
+        <div className="flex flex-col md:flex-row gap-12 mb-10">
+          <div className="md:w-1/2">
+            <label className="font-semibold text-base">
               Your Name
             </label>
             <br />
             <input
-              className=" peer border-b w-full text-xl border-gray-800 py-2 focus:outline-none "
+              className="peer border-b w-full text-xl border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-2 focus:outline-none"
               placeholder="Type your name here!"
               type="text"
             />
-            <div className=""></div>
           </div>
-          <div>
-            <label className="font-semibold  uppercase">
+          <div className="md:w-1/2">
+            <label className="font-semibold ">
               Your Email
             </label>
             <br />
             <input
-              className=" peer border-b w-full text-xl border-black py-2 focus:outline-none "
+              className=" peer border-b w-full text-xl border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-2 focus:outline-none "
               placeholder="Enter your email address"
               type="text"
             />
           </div>
         </div>
+        {/* User text input */}
         <div>
-          <label className="font-semibold uppercase">
+          <label className="font-semibold">
             Your Message
           </label>
           <br />
           <textarea
-            className=" peer border-b text-xl w-full border-black py-6 focus:outline-none "
+            className=" peer border-b text-xl w-full border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-6 focus:outline-none "
             placeholder="Type your message"
             type="text"
           />
