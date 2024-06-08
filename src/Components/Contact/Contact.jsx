@@ -1,5 +1,32 @@
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import swal from "sweetalert";
 /* eslint-disable react/no-unescaped-entities */
+
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    emailjs
+      .sendForm(
+        "service_9q8jdf8",
+        "template_8qe189k",
+        form,
+        "xMLIxfNmpThLyxEov"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          swal('Great!', 'Message Delivered Successfully', 'success')
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div id="Contact" className="my-7 md:my-20">
       <div className="mb-8">
@@ -11,7 +38,7 @@ const Contact = () => {
           have.
         </p>
       </div>
-      <form className="mx-4 md:w-1/2 mx-auto my-12">
+      <form ref={form} onSubmit={sendEmail} className="mx-4 md:w-1/2 mx-auto my-12">
         {/* User details input */}
         <div className="flex flex-col md:flex-row gap-12 mb-10">
           <div className="md:w-1/2">
@@ -23,6 +50,7 @@ const Contact = () => {
               className="peer border-b w-full text-xl border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-2 focus:outline-none"
               placeholder="Type your name here!"
               type="text"
+              name="from_name"
             />
           </div>
           <div className="md:w-1/2">
@@ -34,6 +62,7 @@ const Contact = () => {
               className=" peer border-b w-full text-xl border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-2 focus:outline-none "
               placeholder="Enter your email address"
               type="text"
+              name="from_email"
             />
           </div>
         </div>
@@ -47,6 +76,7 @@ const Contact = () => {
             className=" peer border-b text-xl w-full border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-6 focus:outline-none "
             placeholder="Type your message"
             type="text"
+            name="message"
           />
         </div>
         <input type="submit" value="Send"

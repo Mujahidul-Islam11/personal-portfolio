@@ -50,7 +50,7 @@ const Navbar = ({ dark, setDark }) => {
         className={`flex items-center justify-between container mx-auto py-2`}
       >
         <div>
-          <NavLink to={'/'}>
+          <NavLink to={'/#Home'}>
           <img className="w-[55px] cursor-pointer" src="https://i.ibb.co/r74JVK9/Logo-2.png" alt="" />
           </NavLink>
         </div>
