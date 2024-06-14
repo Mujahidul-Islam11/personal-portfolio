@@ -15,9 +15,9 @@
     },
     {
         "cover": "https://i.ibb.co/K7zzn5g/Untitled-design-3.png",
-        "project_name": "EntoMedu",
+        "project_name": "Movie Mall",
         "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS"],
         "codelink": "https://github.com/Mujahidul-Islam11/brand-shop-client",
-        "livelink": "https://cosmic-pie-c055cc.netlify.app/"
+        "livelink": "https://movie-mall.netlify.app/"
     }
 ]
