@@ -2,12 +2,27 @@
 /* eslint-disable react/no-unknown-property */
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HashLink as NavLink } from "react-router-hash-link";
 
 const Navbar = ({ dark, setDark }) => {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const links = (
     <>
       <NavLink
@@ -45,7 +60,7 @@ const Navbar = ({ dark, setDark }) => {
   );
 
   return (
-    <div className={`md:fixed md:w-full z-10 ${dark? "bg-[#060024]": "bg-white"}`}>
+    <div className={`md:fixed md:w-full z-10 ${dark? "bg-[#060024]": "bg-white"} ${isScrolled && "shadow-md"}`}>
       <div
         className={`flex items-center justify-between container mx-auto py-2`}
       >
