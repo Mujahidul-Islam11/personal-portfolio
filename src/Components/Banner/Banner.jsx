@@ -18,7 +18,7 @@ const Banner = () => {
         <div className="md:flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
           <div className="relative md:hidden">
             <img
-              src="https://i.postimg.cc/y8NhvyR1/LMC-20231231-160520-Sunny-selfie-by-Riyan-1-1-removebg-preview.png"
+              src="https://i.ibb.co/k0TqxPJ/profile-pic-3.png"
               className="relative object-cover shadow-xl rounded-full mb-4"
             />
           </div>
@@ -109,10 +109,10 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="relative hidden md:flex">
+          <div className="relative hidden md:flex justify-center">
             <img
-              src="https://i.postimg.cc/y8NhvyR1/LMC-20231231-160520-Sunny-selfie-by-Riyan-1-1-removebg-preview.png"
-              className={`relative object-cover shadow-xl rounded-b-full`}
+              src="https://i.ibb.co/k0TqxPJ/profile-pic-3.png"
+              className={`relative object-cover w-1/2`}
             />
           </div>
         </div>
