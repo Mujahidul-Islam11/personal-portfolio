@@ -60,7 +60,7 @@ const Navbar = ({ dark, setDark }) => {
   );
 
   return (
-    <div className={`md:fixed md:w-full z-10 ${dark? "bg-[#060024]": "bg-white"} ${isScrolled && "shadow-md"}`}>
+    <div className={`md:fixed md:w-full z-10 ${dark? "bg-[#060024]": "bg-white"} ${isScrolled && "md:shadow-md"}`}>
       <div
         className={`flex items-center justify-between container mx-auto`}
       >
@@ -75,7 +75,7 @@ const Navbar = ({ dark, setDark }) => {
           <a href="https://drive.google.com/uc?export=download&id=1as2dQHULy2U8TOyHa-QCOi23krraMGXH" download={"Mojahidul Islam's Resume"}>
           <button
             id="button-rs"
-            className="items-center text-center font-semibold"
+            className="text-center font-semibold"
           >
             Resume
           </button>
@@ -115,7 +115,13 @@ const Navbar = ({ dark, setDark }) => {
             )}
           </div>
         </div>
-        <div className="block md:hidden">
+        <div className="block md:hidden flex items-center">
+        <button
+            id="button-rs"
+            className="items-center text-center font-semibold -py-2"
+          >
+            Resume
+          </button>
           {open ? (
             <IoMdClose
               onClick={() => setOpen(false)}
