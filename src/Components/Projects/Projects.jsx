@@ -24,10 +24,10 @@ const Projects = () => {
         {projects?.map((project) => (
           <div
             key={project?.project_name}
-            className="border rounded-lg hover:scale-105 transition-transform duration-300 hover:shadow-md hover:shadow-[#38BDF8]"
+            className="md:w-[600px] border rounded-lg hover:scale-105 transition-transform duration-300 hover:shadow-md hover:shadow-[#38BDF8]"
           >
             <img
-              className="object-cover md:w-[800px] rounded-t-lg"
+              className="object-cover w-full rounded-t-lg"
               src={project?.cover}
               alt=""
             />
