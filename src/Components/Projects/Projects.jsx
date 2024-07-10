@@ -19,7 +19,7 @@ const Projects = () => {
         <p className="md:text-lg text-center text-gray-600">Take a look at my projects</p>
       </div>
       {/* Cards container */}
-      <div className="flex flex-wrap justify-center mx-auto gap-12">
+      <div className="flex flex-wrap justify-center mx-auto gap-8">
         {/* Cards */}
         {projects?.map((project) => (
           <div
