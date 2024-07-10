@@ -62,7 +62,7 @@ const Navbar = ({ dark, setDark }) => {
   return (
     <div className={`md:fixed md:w-full z-10 ${dark? "bg-[#060024]": "bg-white"} ${isScrolled && "shadow-md"}`}>
       <div
-        className={`flex items-center justify-between container mx-auto py-2`}
+        className={`flex items-center justify-between container mx-auto`}
       >
         <div>
           <NavLink to={'/#Home'}>
