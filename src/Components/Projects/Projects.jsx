@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -56,18 +55,18 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex justify-center md:justify-end gap-3">
-                  <NavLink to={`${project?.codelink}`}>
+                  <a href={`${project?.codelink}`} target="_blank" rel="noopener noreferrer">
                     <button className="flex gap-2 text-[16px] items-center border py-2 px-4 text-center text-white bg-[#38BDF8] hover:bg-[#34a9db] transition-colors duration-300 rounded-full">
                       <ion-icon name="code-slash-outline"></ion-icon>
                       Code
                     </button>
-                  </NavLink>
-                  <NavLink to={`${project?.livelink}`}>
+                  </a>
+                  <a href={`${project?.livelink}`} target="_blank" rel="noopener noreferrer">
                     <button className="flex gap-2 text-[16px] items-center border py-2 px-4 text-center text-white bg-[#38BDF8] hover:bg-[#34a9db] transition-colors duration-300 rounded-full">
                       <ion-icon name="link-outline"></ion-icon>
                       Live
                     </button>
-                  </NavLink>
+                  </a>
                 </div>
               </div>
             </div>
