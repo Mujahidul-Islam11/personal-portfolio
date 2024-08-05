@@ -8,7 +8,7 @@
     },
     {
         "cover": "https://i.ibb.co/Zdv6Qbf/Untitled-design-4.png",
-        "project_name": "VoteSnap",
+        "project_name": "Vote Snap",
         "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS"],
         "codelink": "https://github.com/Mujahidul-Islam11/votesnap-client",
         "livelink": "https://car-doctor-bc7cb.firebaseapp.com/"
