@@ -5,8 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { HashLink as NavLink } from "react-router-hash-link";
 
-const Navbar = ({ dark, setDark }) => {
-  const [open, setOpen] = useState(false);
+const Navbar = ({ dark, setDark, open, setOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -122,6 +121,7 @@ const Navbar = ({ dark, setDark }) => {
           >
             Resume
           </button>
+          <div onClick={(e_)=> e_.stopPropagation()}>
           {open ? (
             <IoMdClose
               onClick={() => setOpen(false)}
@@ -133,9 +133,10 @@ const Navbar = ({ dark, setDark }) => {
               className="text-xl font-semibold cursor-pointer"
             ></RiMenu2Line>
           )}
+          </div>
         </div>
       </div>
-      <div className="relative z-50">
+      <div onClick={(e_)=> e_.stopPropagation()} className="relative z-50">
       {open ? (
         <div className="md:hidden absolute bg-white right-0 flex justify-end items-end">
           <div className="w-[150px] rounded-lg shadow-xl py-4 px-4">
