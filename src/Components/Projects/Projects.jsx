@@ -34,8 +34,8 @@ const Projects = () => {
               {/* Card heading */}
               <div className="flex items-center gap-2">
                 <img
-                  className="size-7 md:size-8 rounded-full"
-                  src="https://i.ibb.co/Cwjcbkf/react-1-logo-black-and-white.png"
+                  className="size-8 md:size-10 rounded-full border"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlcWfvbl7k2a6VUiV8nPqvVLg01PbYLlWIKh-utZejkgaFxM-kvzGuQJei2tigxzDYJp4&usqp=CAU"
                   alt=""
                 />
                 <h1 className="text-base md:text-xl font-semibold">

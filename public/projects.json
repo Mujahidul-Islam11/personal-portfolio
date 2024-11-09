@@ -14,6 +14,13 @@
         "livelink": "https://car-doctor-bc7cb.firebaseapp.com/"
     },
     {
+        "cover": "https://i.ibb.co.com/qMKsh7L/Untitled-design.png",
+        "project_name": "Let's Eat",
+        "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS", "JWT", "Stripe"],
+        "codelink": "https://github.com/Mujahidul-Islam11/Let-s-eat-client",
+        "livelink": "https://lets-eat-client.netlify.app/"
+    },
+    {
         "cover": "https://i.ibb.co/K7zzn5g/Untitled-design-3.png",
         "project_name": "Movie Mall",
         "tags": ["ReactJS", "MongoDB", "ExpressJS", "NodeJS", "Firebase", "TailwindCSS"],

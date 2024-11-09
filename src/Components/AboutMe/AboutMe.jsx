@@ -19,7 +19,7 @@ const AboutMe = () => {
           <h3 className="lg:text-lg sm:text-base text-sm mb-6">
             👋 Hi, I'm{" "}
             <span className="font-bold">Mohammad Mojahidul Islam</span>,
-            an 18-year-old front-end developer passionate about crafting
+            an 20-year-old front-end developer passionate about crafting
             beautiful and functional web applications with ReactJS and
             TailwindCSS. Though I'm a fresh face in the tech scene, my drive for
             innovation and attention to detail sets me apart. Let's transform
