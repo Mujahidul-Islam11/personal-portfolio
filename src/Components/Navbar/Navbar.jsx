@@ -69,9 +69,8 @@ const Navbar = ({ dark, setDark, open, setOpen }) => {
           </NavLink>
         </div>
         <div className="hidden md:flex items-center gap-6">
-          {/* https://drive.google.com/file/d/1as2dQHULy2U8TOyHa-QCOi23krraMGXH/view?usp=sharing */}
           {links}
-          <a href="https://drive.google.com/uc?export=download&id=1as2dQHULy2U8TOyHa-QCOi23krraMGXH" download={"Mojahidul Islam's Resume"}>
+          <a href="https://drive.google.com/uc?export=download&id=1ZRWpcwTHGvUfgS0yfki_cbbc0fyCoGzI" download={"Mojahidul Islam's Resume"}>
           <button
             id="button-rs"
             className="text-center font-semibold"
