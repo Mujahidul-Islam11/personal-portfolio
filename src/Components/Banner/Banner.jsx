@@ -15,21 +15,21 @@ const Banner = () => {
   return (
     <div className="py-8">
       <section className="min-h-[700px] flex max-w-screen-xl relative w-full items-center justify-center px-4">
-        <div className="md:flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
+        <div className="flex w-full max-w-6xl gap-10 lg:flex-row flex-col items-center justify-between">
           <div className="relative md:hidden">
             <img
-              src="https://i.ibb.co/k0TqxPJ/profile-pic-3.png"
+              src="https://i.ibb.co.com/s6vRZJ9/profile-pic-5.png"
               className="relative object-cover shadow-xl rounded-full mb-4"
             />
           </div>
           <div className="max-w-md md:space-y-6 sm:space-y-5 space-y-4">
             <h1
-              className={`lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight ${dark? 'text-white': '#101010'}`}
+              className={`lg:text-5xl sm:text-4xl text-3xl font-bold leading-tight ${dark ? 'text-white' : '#101010'}`}
             >
               Mohammad Mojahidul Islam
             </h1>
             <h1 className="text-lg md:text-2xl">
-              I am a 
+              I am a
               <span className="text-sky-400 font-semibold"> {text}</span>
               <span className="text-sky-400 font-semibold"> <Cursor></Cursor></span>
             </h1>
@@ -41,7 +41,7 @@ const Banner = () => {
             </p>
 
             {/* Contact information's */}
-            
+
             <div className="flex space-x-4">
               <div class="md:justify-start flex  flex-wrap mx-auto w-full justify-center md:m-0 gap-3 md:gap-6">
                 <a href="https://github.com/Mujahidul-Islam11" target="_blank">
@@ -111,8 +111,8 @@ const Banner = () => {
           </div>
           <div className="relative hidden md:flex justify-center">
             <img
-              src="https://i.ibb.co/k0TqxPJ/profile-pic-3.png"
-              className={`relative object-cover w-1/2`}
+              src="https://i.ibb.co.com/s6vRZJ9/profile-pic-5.png"
+              className={`relative object-cover w-1/2 mx-auto`}
             />
           </div>
         </div>

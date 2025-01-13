@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div className="flex justify-center md:w-1/2">
           <img
             className="mb-6 w-[200px] md:w-[400px] h-[200px] md:h-[400px] object-cover rounded-full"
-            src="https://i.ibb.co/0r48SF0/about-me.jpg"
+            src="https://i.ibb.co.com/nmcWRCK/PXL-20241229-113131312-2.jpg"
             alt=""
           />
         </div>
