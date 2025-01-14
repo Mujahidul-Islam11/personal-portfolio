@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-float-location {
+  animation: float 2s ease-in-out infinite;
+}
+.animate-float-active {
+  animation: float 3s ease-in-out infinite;
+}
+.status-dot {
+  @apply w-4 h-4 rounded-full bg-green-400;
+  animation: blink 2s infinite;
+}
+
 #button-rs {
   --color: #0077ff;
   font-family: inherit;
