@@ -15,7 +15,6 @@ const Projects = () => {
         <h3 className="text-3xl md:text-5xl font-bold text-center">
           My Projects
         </h3>
-        <p className="md:text-lg text-center text-gray-600">Take a look at my projects</p>
       </div>
       {/* Cards container */}
       <div className="flex flex-wrap justify-center mx-auto gap-8">

@@ -33,10 +33,6 @@ const Contact = () => {
         <h3 className="text-3xl md:text-5xl font-bold text-center">
           Contact with Me
         </h3>
-        <p className="md:text-lg text-center text-gray-600">
-          Reach out and let's chat! I'm here to answer any questions you may
-          have.
-        </p>
       </div>
       <form ref={form} onSubmit={sendEmail} className="mx-4 md:w-1/2 mx-auto my-12">
         {/* User details input */}
@@ -47,7 +43,7 @@ const Contact = () => {
             </label>
             <br />
             <input
-              className="peer border-b w-full text-xl border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-2 focus:outline-none"
+              className="peer border-b w-full text-xl border-black bg-transparent focus:border-[#38BDF8] focus:caret-[#38BDF8] py-2 focus:outline-none"
               placeholder="Type your name here!"
               type="text"
               name="from_name"
@@ -59,7 +55,7 @@ const Contact = () => {
             </label>
             <br />
             <input
-              className=" peer border-b w-full text-xl border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-2 focus:outline-none "
+              className=" peer border-b w-full text-xl border-black bg-transparent focus:border-[#38BDF8] focus:caret-[#38BDF8] py-2 focus:outline-none "
               placeholder="Enter your email address"
               type="text"
               name="from_email"
@@ -73,14 +69,14 @@ const Contact = () => {
           </label>
           <br />
           <textarea
-            className=" peer border-b text-xl w-full border-[#38BDF8] bg-transparent focus:caret-[#38BDF8] py-6 focus:outline-none "
+            className=" peer border-b text-xl w-full border-black bg-transparent focus:border-[#38BDF8] focus:caret-[#38BDF8] py-6 focus:outline-none "
             placeholder="Type your message"
             type="text"
             name="message"
           />
         </div>
         <input type="submit" value="Send"
-        className="bg-[#38BDF8] text-xl text-white rounded-sm cursor-pointer py-2 px-6 flex justify-center mx-auto mt-6 hover:bg-[#35afe2]" />
+        className="bg-sky-500 text-xl text-white rounded-sm cursor-pointer py-2 px-6 flex justify-center mx-auto mt-6 hover:bg-sky-600" />
       </form>
     </div>
   );

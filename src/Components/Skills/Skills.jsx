@@ -13,7 +13,6 @@ const Skills = () => {
         <h3 className="text-3xl md:text-5xl font-bold text-center">
           My Skills
         </h3>
-        <p className="md:text-lg text-center text-gray-600">Check out my skills</p>
       </div>
       <div className="mx-4 flex justify-center md:mx-32 flex-wrap gap-3 md:gap-8">
         {logos?.map((logo) => (

@@ -5,7 +5,6 @@ const AboutMe = () => {
     <div id="About" className="my-7 md:my-14">
       <div className="mb-8">
         <h3 className="text-3xl md:text-5xl font-bold text-center">About Me</h3>
-        <p className="md:text-lg text-center text-gray-600">My introduction</p>
       </div>
       <div className="px-4 md:flex justify-center items-center gap-16">
         <div className="flex justify-center md:w-1/2">
