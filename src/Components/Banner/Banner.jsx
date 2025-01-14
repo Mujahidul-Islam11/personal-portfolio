@@ -87,7 +87,7 @@ const Banner = () => {
                 <p className="text-sm lg:text-16">Chattogram, Bangladesh</p>
               </div>
             </div>
-            <div className="absolute left-16 size-fit bg-white p-2 lg:p-3 rounded-lg border shadow-md flex items-center gap-4 animate-float-active">
+            <div className="absolute left-4 md:left-16 size-fit bg-white p-2 lg:p-3 rounded-lg border shadow-md flex items-center gap-4 animate-float-active">
               <div className="flex items-center gap-2 ">
                 <div className="status-dot"></div>
                 <p className="text-sm lg:text-16">Available Now</p>
