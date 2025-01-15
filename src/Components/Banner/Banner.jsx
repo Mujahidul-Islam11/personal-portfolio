@@ -81,13 +81,13 @@ const Banner = () => {
               src="https://i.ibb.co.com/s6vRZJ9/profile-pic-5.png"
               className={`relative object-cover md:w-1/2 mx-auto`}
             />
-            <div className="absolute bottom-6 md:top-1/2 right-0 md:left-0 size-fit bg-white p-2 lg:p-3 rounded-lg border shadow-md flex items-center gap-4 animate-float-location">
-              <div className="flex items-center gap-2 ">
+            <div className={`absolute bottom-6 md:top-1/2 right-0 md:left-0 size-fit bg-white p-2 lg:p-3 rounded-lg border shadow-md flex items-center gap-4 animate-float-location`}>
+              <div className="flex items-center gap-2">
                 <CiLocationOn className="text-2xl"/>
                 <p className="text-sm lg:text-16">Chattogram, Bangladesh</p>
               </div>
             </div>
-            <div className="absolute left-4 md:left-16 size-fit bg-white p-2 lg:p-3 rounded-lg border shadow-md flex items-center gap-4 animate-float-active">
+            <div className={`absolute left-4 md:left-16 size-fit bg-white p-2 lg:p-3 rounded-lg border shadow-md flex items-center gap-4 animate-float-active`}>
               <div className="flex items-center gap-2 ">
                 <div className="status-dot"></div>
                 <p className="text-sm lg:text-16">Available Now</p>
